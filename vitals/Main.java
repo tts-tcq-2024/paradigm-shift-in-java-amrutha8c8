@@ -12,15 +12,15 @@ class Battery
     }
     public float getTemperature()
     {
-        return temperature();
+        return temperature;
     }
     public float getSoc()
     {
-        return soc();
+        return soc;
     }
     public float getChargeRate()
     {
-        return chargeRate();
+        return chargeRate;
     }
 }     
 class BatteryChecker
@@ -35,7 +35,7 @@ class BatteryChecker
         boolean temperatureOk= checkTemperature(battery.getTemperature());
         boolean socOk= checkSoc(battery.getSoc());
         boolean chargeRateOk= checkChargeRate(battery.getChargeRate());
-        return temperatureOk&&socOk&&chargeRateOk;
+        return temperatureOk && socOk && chargeRateOk;
     }
     private static boolean checkTemperature(float temperature)
     {
