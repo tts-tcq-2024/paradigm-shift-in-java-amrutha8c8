@@ -1,4 +1,4 @@
-package vitals;
+
 class Battery 
 {
     private float temperature;
